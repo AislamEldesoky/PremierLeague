@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+<data>
+    <variable
+        name="viewModel"
+        type="com.example.premierleague.team.TeamDetailViewModel" />
+</data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/players"
+        app:listPlayers="@{viewModel.selectedTeam.players}"
+        tools:listitem="@layout/list_team_players"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
+
+</LinearLayout>
+</layout>

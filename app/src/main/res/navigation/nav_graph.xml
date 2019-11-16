@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/competitionTeamFragment">
+    <fragment
+        android:id="@+id/competitionTeamFragment"
+        android:name="com.example.premierleague.competition_teams.CompetitionTeamFragment"
+        android:label="CompetitionTeamFragment" >
+        <action
+            android:id="@+id/action_competitionTeamFragment_to_teamDetailFragment"
+            app:destination="@id/teamDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamDetailFragment"
+        android:name="com.example.premierleague.team.TeamDetailFragment"
+        android:label="TeamDetailFragment" >
+        <argument
+            android:name="selectedTeam"
+            app:argType="com.example.premierleague.network.Team" />
+    </fragment>
+</navigation>

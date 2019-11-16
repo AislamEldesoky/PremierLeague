@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "994139147163",
+    "firebase_url": "https://premiereleague.firebaseio.com",
+    "project_id": "premiereleague",
+    "storage_bucket": "premiereleague.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:994139147163:android:f95bbf3f0906c927cd2f3e",
+        "android_client_info": {
+          "package_name": "com.example.premierleague"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "994139147163-p1sgasj5fn28ubj6ov76m482fqfbh1aj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB95tbWhOej-AZDumFx8T0wwg91sE0oCnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "994139147163-p1sgasj5fn28ubj6ov76m482fqfbh1aj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

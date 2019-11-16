@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="player"
+            type="com.example.premierleague.network.Player" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/rounded_border"
+    android:backgroundTint="#ffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
+        android:text='@{"name :"+String.valueOf(player.name)}'
+        android:id="@+id/name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/position"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_below="@+id/name"
+        android:text='@{"position :"+String.valueOf(player.position)}'
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
+        android:text='@{"nationality :"+String.valueOf(player.nationality)}'
+        android:id="@+id/nationality"
+        android:layout_below="@+id/position"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_dark_background"
+        android:text='@{"shirtNumber :"+String.valueOf(player.shirtNumber)}'
+        android:id="@+id/shirtnumber"
+        android:layout_below="@+id/nationality"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nationality"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"
+        android:text="@{String.valueOf(player.role)}"/>
+
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
